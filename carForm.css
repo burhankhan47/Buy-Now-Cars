@@ -1,0 +1,19 @@
+.footer{
+    background-color: rgb(238, 233, 233);
+    color: black;
+  
+  }
+  
+  span>a{
+      color: black;
+      size: 100px;
+      text-decoration: none;
+
+  }
+  
+  .insta:hover{
+      opacity: 0.9;
+      color: rgb(121, 90, 95);
+  }
+
+ 
