@@ -1,8 +1,9 @@
-       // Alert
+//        // Alert
 
-alert ("Java Script Practice")
+// alert ("Java Script Practice")
+console.log("Make A Bill")
 
-//Time code
+// //Time code
 
 var Time=prompt("Hello User Tell Me Current time In Your Device")
 if (Time >=0 && Time <6){
@@ -25,67 +26,43 @@ if(Time >24)
     console.log("There Is Only 24 Hour in  Whole Day ")
 }
 
-// Time Code 
+// // Time Code 
 
-// User Info Get
+// // User Info Get
 
 var FirstName=prompt("Enter Your First Name Here ")
 
-var LastName=prompt("Enter Your Last Name Here")
+var LastName= prompt(" Enter Your Last Name Here")
 
 var FullName=FirstName + LastName
 
-console.log(FullName)
+console.log("Hello" , FullName )
 // User Info Get
 
 // java math use 
 
- var Car=prompt("We Have One deal For You ( Buy 2 Cars) If You Take A Deal We Are Discount Rupees 1,00,000 Please Answer Only 'Yes' or 'No' and One Car Is Only 10,00,000 Type Okay To Next Step " )
-
+var Car=prompt("Enter Car Name Whould You Want To Buy")
 console.log(Car)
 
-var Deal=50000
+var OneCarPrice=prompt("Enter Car Price Here")
+console.log(OneCarPrice , "Each Car Price")
 
-var OneCarPrice=1000000
+var QauntityOfCars=prompt("How Many Cars You Want")
+console.log(QauntityOfCars , "Your Cars Qauntity")
 
-var EachCarPrice= OneCarPrice - Deal
+var TotalCarAmount= OneCarPrice * QauntityOfCars
+console.log(TotalCarAmount , "Total Car Amount")
 
-var CountityOfCars=prompt("How Many Cars You Want")
+var percentage=prompt("Discount in Percentage")
+console.log(percentage,"%")
 
-var TotalCarAmount= EachCarPrice * CountityOfCars
-console.log(TotalCarAmount)
+var DiscountAmount=(TotalCarAmount*percentage)/100
+console.log(DiscountAmount ,  "Discount Percentage Amount")
 
-var MembersOfCar=prompt("How Many Partners With You")
+var AfterDiscountCarPrice=TotalCarAmount-DiscountAmount
+console.log(AfterDiscountCarPrice , "After (SUB) Your Percentage Amount")
 
-var totalCarPartners = TotalCarAmount / MembersOfCar
-
-console.log(totalCarPartners)
-// java math use
-
-
-// If And Else Use 
-
-var percentage=prompt("please rate the web in percentage")
-
-if(percentage > 0 && percentage < 50){
-    console.log("Avarage")
-}
-if(percentage >= 50 && percentage < 60){
-    console.log("Normal")
-}
-if(percentage >= 60 && percentage < 70){
-    console.log("Nice")
-}
-if(percentage >= 70 && percentage < 80){
-    console.log("Best")
-}
-if(percentage >= 80 && percentage < 90){
-    console.log("Awesome")
-}
-if(percentage >= 90 && percentage <= 100){
-    console.log("Superb")
-}
-if(percentage > 100){
-    console.log( "Percentage Error")
-}
-// If And Else Use 
+var PartnersOfCar=prompt("How Many Partners With You")
+console.log(PartnersOfCar , "Number Of Car Partners ")
+var TotalCarPartners = AfterDiscountCarPrice / PartnersOfCar
+console.log(TotalCarPartners ,"Total Bill For Each Person")
